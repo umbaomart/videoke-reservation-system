@@ -1,0 +1,183 @@
+.main-content {
+
+    form {
+        // padding: 15px 0;
+        
+        display: flex;
+        flex-wrap: wrap;
+
+        .form__group {
+            width: inherit;
+            width: 100%;
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: space-around;
+            position: relative;
+        
+            .form-group {
+                
+                flex: 2;
+                
+                display: flex;
+                flex-direction: column;
+                // align-items: flex-start;
+                // align-content: flex-end;
+                // justify-content: center;
+                padding: 10px;
+                border: 1px solid $light-gray;
+                border-radius: 5px;
+                margin: 10px;
+
+                position: relative;
+                span {
+                    // background: pink;
+                    color: red;
+                    font-size: 12px;
+                    position: absolute;
+                    bottom: -17px;
+                }
+
+                .__form-group {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    > * {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        color: $text-dark;
+                    }
+                }
+    
+                :nth-child(1) {
+                    flex: 2;
+                }
+                
+                > input {
+                    border: none;
+                    font-size: 17px;
+                    padding: 10px;
+                    border-radius: 3px;
+                    transition: all ease-in-out .3s;
+                }
+                
+                > input:focus {
+                    outline: none;
+                    background: rgba(233, 233, 233, 0.698);
+                }
+
+                > select {
+                    border: none;
+                    font-size: 17px;
+                    padding: 10px;
+                    border-radius: 3px;
+                    transition: all ease-in-out .3s;
+                    text-transform: uppercase;
+                }
+                
+                > select:focus {
+                    outline: none;
+                    background: rgba(233, 233, 233, 0.698);
+                }
+                
+                > input[type=date] {
+                    text-transform: uppercase;
+                }
+            }
+            
+            .__hide {
+                border: 1px solid $white;
+            }
+
+            .booking-btn {
+                border: none;
+                border: 1px solid $white;
+                margin: 0 0 0 20px;
+
+                display: flex;
+                flex-direction: row;
+                transform: translateY(-25px);
+            }
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        .booking-btn-submit {
+            // background: pink;
+            // margin: 35px auto;
+            position: absolute;
+            width: 1030px;
+            padding: 20px 20px;
+            // background: pink;
+            border-top: 1px solid $light-gray;
+            bottom: 10px;
+
+            display: flex;
+            justify-content: center;
+
+            // input {
+            //     margin-top: 35px;
+            // }
+        }
+    }
+    
+}
+
+.btn_ {
+    padding: 12px 17px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background: $secondary-light;
+    color: $white;
+    font-size: 13px;
+    
+    i {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+}
+
+.btn_:hover {
+    background: $secondary;
+}
+
+.nav-tabs {
+    // background: pink;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    .splitter {
+        box-sizing: border-box;
+        padding: .5px;
+        background: $light-gray;
+        margin: 10px;
+    }
+
+    ._tab {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 0;
+        // background: pink;
+        color: black;
+        border-bottom: 3px solid $white;
+        transition: all ease-in-out .3s;
+    }
+
+    ._tab:hover {
+        border-bottom: 3px solid $primary-dark;
+    }
+    
+    ._tab__active {
+        border-bottom: 3px solid $primary-dark;
+    }
+}
+

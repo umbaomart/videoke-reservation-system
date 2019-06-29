@@ -1,0 +1,146 @@
+.main-content {
+    padding: 20px;
+    background: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    // position: relative;
+    
+    .title {
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .content {
+
+        .current {
+
+            button {
+                font-size: 15px;
+                padding: 10px 0 3px 0;
+                background: none;
+                border: none;
+                border-bottom: 2px solid $primary-light;
+                
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .nav-tabs {
+        display: flex;
+        justify-content: space-between;
+        // position: fixed;
+        // background: pink;
+        // width: 1020px;
+        // padding: 20px;
+        // position: absolute;
+    }
+
+    .nav-tab {
+        padding-top: 10px;
+        display: flex;
+
+        > * {
+            font-size: 14px;
+        }
+    }
+    
+    #btn_ {
+        text-decoration: none;
+    }
+
+    .nav-tab, .nav-content {
+        width: inherit;
+        // background: pink;
+        display: flex;
+        flex-direction: row;
+
+        ._nav-tab-child {
+            text-transform: uppercase;
+            flex: 1;
+            // align-self: center;
+            padding: 10px 0px 25px 0px;
+            border-bottom: 1px solid $light-gray;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        :nth-child(1) {
+            justify-content: flex-start;
+        }
+        
+        :nth-child(2) {
+            flex: 2;
+        }
+
+        :nth-child(3) {
+            flex: 2;
+        }
+    } 
+
+    .nav-content {
+        border-bottom: 1px solid $light-gray;
+        padding: 10px 0;
+    }
+    
+    ._nav-content-child {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-content:nth-child(2) {
+        flex: 2;
+    }
+
+    .__actions {
+        
+        ul {
+            li {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                width: 100px;
+                background: pink;
+                border-radius: 3px;
+                overflow: hidden;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    background: $primary;
+                    width: 80%;
+                    padding: 5px 10px;
+                    transition: all ease-in-out .3s;
+                    
+                    
+                    i {
+                        transition: all ease-in-out .3s;
+                        color: $primary-light;
+                    }
+                }
+                
+                a:hover {
+                    background: $primary-dark;
+                    i {
+                        color: $white;
+                    }
+
+                    i.fa-trash {
+                        color: red;  
+                    }
+                }
+            }
+        }
+
+    }
+}

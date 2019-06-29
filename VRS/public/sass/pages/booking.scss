@@ -1,0 +1,177 @@
+.booking-content {
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-end;
+    }
+}
+
+// Booking result
+.bookings-result {
+    // padding-top: 100px;
+    
+    .header, .__result {
+        width: 100%;
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+        align-content: center;
+        
+        border-bottom: 1px solid $light-gray;
+
+        
+        .__flex {
+            flex: 2;
+            font-size: 15px;
+        }
+    }
+    
+    .header {
+        padding: 15px 0px 10px 0px;
+
+        .__flex {
+            display: flex;
+            // justify-content: center;
+
+        }
+
+        .__header-name {
+            align-self: flex-end;
+
+        }
+        
+        p {
+            font-weight: 600;
+        }
+
+        :nth-child(2) {
+            flex: 3;
+        }
+
+        :nth-child(4) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        :nth-child(5) {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+    }
+
+    .__result {
+        padding: 5px 0;
+
+        p {
+            font-size: 14px;
+        }
+
+        :nth-child(2) {
+            flex: 3;
+        }
+
+        :nth-child(4) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        :nth-child(5) {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            > * {
+                color: $light-gray;
+            }
+            
+            .__control-btn {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+
+                button.btn_delete, a.btn_edit {
+                    color: $primary-light;
+                    text-decoration: none;
+                    background: $primary;
+                    border: none;
+                    padding: 6px 7px;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    transition: all ease-in-out .3s;
+                    margin-left: 2px;
+                    
+                    i {
+                        font-size: 15px;
+                        transition: all ease-in-out .3s;
+                    }
+                }
+
+                a:hover {
+                    background: $primary-light;
+                    i {
+                        color: $white;
+                    }
+                }
+
+                button:hover {
+                    background: $primary-light;
+
+                    .fa-trash {
+                        color: rgb(253, 70, 70);
+                    }
+                }
+                
+                a.btn_delete {
+                    color: $primary-light;
+                    text-decoration: none;
+                    background: $primary;
+                    border: none;
+                    padding: 6px 7px;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    transition: all ease-in-out .3s;
+                    margin-left: 2px;
+                    
+                    i {
+                        font-size: 15px;
+                        transition: all ease-in-out .3s;
+                    }
+                }
+                
+                a.btn_delete:hover {
+                    background: $primary-light;
+                    i {
+                        transition: all ease-in-out .3s;
+                        color: rgb(253, 70, 70);
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#result-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
